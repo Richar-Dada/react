@@ -8,16 +8,17 @@
     <script src="../build/browser.min.js"></script>
 </head>
 <body>
-    <div id="example">
-        
-    </div>
+    <div id="example"></div>
     <script type="text/babel">
+        const names = ['Alice', 'Emily', 'Kate']
         ReactDOM.render(
-                <h1>Hello, world!</h1>,
-                document.getElementById('example')
-            )
-        ReactDOM.render(
-            <p>你好</p>,
+            <div>
+                {
+                    names.map((name, index) => {
+                        return <div key={index}>Hello, {name}</div>
+                    })
+                }
+            </div>,
             document.getElementById('example')
         )
     </script>
