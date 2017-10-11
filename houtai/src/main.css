@@ -35,7 +35,7 @@
     padding: 20px 20px 0 20px;
     position: absolute;
     top: 0;
-    left: 185px;
+    left: 235px;
     right: 0;
     bottom: 0;
     overflow-y: auto;
@@ -84,4 +84,7 @@
 
 .doclist {
     line-height: 40px;
+}
+.content{
+    margin-top: 20px;
 }
