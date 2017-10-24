@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 import './index.css'
-import Square from './components/square.js'
+import Board from './components/board.js'
 
 ReactDom.render(
-	<Square value="click" />,
+	<Board />,
 	document.getElementById('root')
 	)
