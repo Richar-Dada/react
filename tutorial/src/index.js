@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 import './index.css'
-import Board from './components/board.js'
+import Game from './components/game.js'
 
 ReactDom.render(
-	<Board />,
+	<Game />,
 	document.getElementById('root')
 	)
