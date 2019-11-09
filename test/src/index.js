@@ -3,9 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Pure from './Pure'
+import Pure2 from './Pure2'
+import Pure3 from './Pure3'
+import Pure4 from './Pure4'
+import IndexPage from './IndexPage'
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Pure />, document.getElementById('root'));
+ReactDOM.render(<Pure4 />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -11,28 +11,19 @@ class Pure extends Component{
     constructor() {
         super()
         this.state = {
-            count: 0,
-            info: {
-                name: 'richar',
-                age: 11
-            }
+            count: 0
         }
     }
 
-    handleUpdateObject = () => {
-        this.setState({
-            info: Object.assign({}, this.state.info)
-        })
-    }
-
     render() {
+        console.log('Pure render')
+
         const { count } = this.state
         return (
             <div>
-                <p>Pure</p>
+                <p>{count}</p>
                 <button onClick={() => this.setState({count: count+1})}>Add</button>
-                <button onClick={this.handleUpdateObject}>update object</button>
-                <Foo name="foo" info={this.state.info}></Foo>
+                <Foo name="foo"></Foo>
             </div>
         )
     }
